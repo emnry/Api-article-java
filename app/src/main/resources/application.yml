@@ -1,0 +1,18 @@
+app:
+  persistence:
+    type: mongo
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/article_db
+  datasource:
+    url: jdbc:mysql://localhost:3306/article_api?useSSL=false&serverTimezone=UTC
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true

@@ -1,0 +1,8 @@
+rootProject.name = 'tp-article'
+
+include 'core-domain'
+include 'adapter-jpa'
+include 'adapter-mongo'
+include 'app'
+
+include 'adapter-mock'
